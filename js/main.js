@@ -26,8 +26,8 @@
     for (let i = 0; i < numDots; i++) {
       const newDot = document.createElement('div');
       newDot.setAttribute('class', 'dot');
-      const dotTop = Math.random() * (playGround.offsetHeight - dotSize);
-      const dotLeft = Math.random() * (playGround.offsetWidth - dotSize);
+      let dotTop = Math.random() * (playGround.offsetHeight - dotSize);
+      let dotLeft = Math.random() * (playGround.offsetWidth - dotSize);
 
       if (dotTop < dotSize) {
         dotTop += dotSize;
